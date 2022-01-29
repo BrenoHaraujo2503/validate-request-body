@@ -6,7 +6,10 @@ const app = express();
 app.use(express.json())
 
 app.post("/", (req, res) => {
-  const validate = new ValidateRequestBody([], req)
+  const validate = new ValidateRequestBody([
+    "username",
+    "password"
+  ], req)
   const result = validate.execute()
 
   if(result) {
