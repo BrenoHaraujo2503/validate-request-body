@@ -1,0 +1,24 @@
+{
+  "name": "custom-package",
+  "version": "1.0.0",
+  "author": {
+    "email": "brenoharaujomorais@gmail.com",
+    "name": "Breno Henrique",
+    "url": "https://github.com/BrenoHaraujo2503/"
+  },
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "npm-run-all -p dev:*",
+    "dev:server": "ts-node-dev --transpile-only --ignore-watch node_modules src/server.ts"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "npm-run-all": "^4.1.5",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "express": "^4.17.2",
+    "ts-node-dev": "^1.1.8"
+  }
+}
